@@ -1,0 +1,899 @@
+{
+  "Uuid": "75c19634-708f-4c2a-a7f9-f7f502318bb5",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "kalıpalan",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "Revit.ElementQueries": {
+        "Key": "Revit.Elements.InternalUtilities.ElementQueries",
+        "Value": "RevitNodes.dll"
+      },
+      "Category": {
+        "Key": "Revit.Elements.Category",
+        "Value": "RevitNodes.dll"
+      },
+      "Revit.Elements.InternalUtilities.ElementQueries": {
+        "Key": "Revit.Elements.InternalUtilities.ElementQueries",
+        "Value": "RevitNodes.dll"
+      },
+      "Elements.Element": {
+        "Key": "Revit.Elements.Element",
+        "Value": "RevitNodes.dll"
+      },
+      "Revit.Elements.Element": {
+        "Key": "Revit.Elements.Element",
+        "Value": "RevitNodes.dll"
+      },
+      "Autodesk.Solid": {
+        "Key": "Autodesk.DesignScript.Geometry.Solid",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Autodesk.DesignScript.Geometry.Solid": {
+        "Key": "Autodesk.DesignScript.Geometry.Solid",
+        "Value": "ProtoGeometry.dll"
+      },
+      "PolySurface": {
+        "Key": "Autodesk.DesignScript.Geometry.PolySurface",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Surface": {
+        "Key": "Autodesk.DesignScript.Geometry.Surface",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Vector": {
+        "Key": "Autodesk.DesignScript.Geometry.Vector",
+        "Value": "ProtoGeometry.dll"
+      },
+      "DSCore.List": {
+        "Key": "DSCore.List",
+        "Value": "DSCoreNodes.dll"
+      },
+      "DesignScript.Dictionary": {
+        "Key": "DesignScript.Builtin.Dictionary",
+        "Value": "DesignScriptBuiltin.dll"
+      },
+      "DesignScript.Builtin.Dictionary": {
+        "Key": "DesignScript.Builtin.Dictionary",
+        "Value": "DesignScriptBuiltin.dll"
+      },
+      "Math": {
+        "Key": "DSCore.Math",
+        "Value": "DSCoreNodes.dll"
+      },
+      "Autodesk.Point": {
+        "Key": "Autodesk.DesignScript.Geometry.Point",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Autodesk.DesignScript.Geometry.Point": {
+        "Key": "Autodesk.DesignScript.Geometry.Point",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Wall": {
+        "Key": "Revit.Elements.Wall",
+        "Value": "RevitNodes.dll"
+      },
+      "CoordinateSystem": {
+        "Key": "Autodesk.DesignScript.Geometry.CoordinateSystem",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Geometry.BoundingBox": {
+        "Key": "Autodesk.DesignScript.Geometry.BoundingBox",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Autodesk.DesignScript.Geometry.BoundingBox": {
+        "Key": "Autodesk.DesignScript.Geometry.BoundingBox",
+        "Value": "ProtoGeometry.dll"
+      },
+      "DSCore.Math": {
+        "Key": "DSCore.Math",
+        "Value": "DSCoreNodes.dll"
+      },
+      "Cuboid": {
+        "Key": "Autodesk.DesignScript.Geometry.Cuboid",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Circle": {
+        "Key": "Autodesk.DesignScript.Geometry.Circle",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Autodesk.Geometry": {
+        "Key": "Autodesk.DesignScript.Geometry.Geometry",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Autodesk.DesignScript.Geometry.Geometry": {
+        "Key": "Autodesk.DesignScript.Geometry.Geometry",
+        "Value": "ProtoGeometry.dll"
+      },
+      "DesignScript.Curve": {
+        "Key": "Autodesk.DesignScript.Geometry.Curve",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Autodesk.DesignScript.Geometry.Curve": {
+        "Key": "Autodesk.DesignScript.Geometry.Curve",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Vector.ZAxis": {
+        "Key": "Autodesk.DesignScript.Geometry.Vector",
+        "Value": "ProtoGeometry.dll"
+      },
+      "DSCore.List.Empty": {
+        "Key": "DSCore.List",
+        "Value": "DSCoreNodes.dll"
+      },
+      "List": {
+        "Key": "List",
+        "Value": "BuiltIn.ds"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "a=\tRevit.ElementQueries.OfCategory(Category.ByName(x));\nb=\tElements.Element.Geometry(a);",
+      "Id": "bb8a404920d047fba49f0b9847d1cfa8",
+      "Inputs": [
+        {
+          "Id": "143eac57650c46b9a65bf81126a0ea67",
+          "Name": "x",
+          "Description": "x",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e9cff8b1723c46e9b5062e8aa48ca895",
+          "Name": "",
+          "Description": "a",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "02ba4479a054437cbf95ca96d582c98d",
+          "Name": "",
+          "Description": "b",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"Stairs\";",
+      "Id": "b99bb78cfa734cf9863709a02538ebb8",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b56e2d3c848b4d31a06a2e93252cc554",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "4d81b7b4-8bc1-4ff8-8fe5-da74bc37fef0",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "b4b0d43753ec47a29f8e9643f5156a61",
+      "Inputs": [
+        {
+          "Id": "c3ed2e624a4149deba5708945337d70b",
+          "Name": "solids",
+          "Description": "Solid[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8e7d7262c81941519a866984046976df",
+          "Name": "solids",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "The OOTB node Solid.ByUnion occasionally fails when trying to merge solids with almost adjacent faces. This node will return the minimum amount of joined solids possible in such cases instead of returning null."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "def KalıpAlan (s:var[]..[])\n{\n\ta=\tDSCore.List.Chop(DSCore.List.FirstItem(s@L2<1>),1);\n\tb=\tPolySurface.BySolid(a).Surfaces();\n\tb0=\tSurface.TangentAtUParameter(b,1,1);\n\n\t//Kalıp\n\tk0=\tVector.IsParallel(b0,Vector.ZAxis());\n\tk1= DSCore.List.FilterByBoolMask(b,k0)[\"out\"];\n\tk2=\tDSCore.List.FilterByBoolMask(b,k0)[\"in\"];\n\tk3=\tSurface.TangentAtUParameter(k1,1,1).X==1 ? true:false;\n\tk4=\tDSCore.List.FilterByBoolMask(k1,k3)[\"out\"];\n\n\t//Toplam alan\n\tsp=\tDSCore.List.Transpose(Surface.ByUnion([k2,k4])).ByUnion();\n\tsp1=sp.ByUnion();\n\tsp2=sp1.Surfaces();\n\t//ta=\tMath.Sum(Surface.Area(sp));\n\treturn [sp1,sp2];\n\n};",
+      "Id": "773ddac72376466fa5174859f326ad65",
+      "Inputs": [],
+      "Outputs": [],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "def gen (s:var[]..[])\n{\n\tgmty= KalıpAlan(s);\n\n\t//Surface Coordinate System\n\tsc=\tSurface.CoordinateSystemAtParameter(gmty[0],1,1);\n\t//Cuboid-Center\n\tcs1 = CoordinateSystem.Identity().Transform(sc);\n\tgb1 = Geometry.BoundingBox.ByGeometry(gmty[0].Transform(cs1,CoordinateSystem.Identity())<1>);\n\tgb2 = DSCore.Math.Round(gb1.MinPoint.DistanceTo(gb1.MaxPoint),3);\n\tgb3 = DSCore.List.SortByKey(gb1,gb2)[\"sorted list\"].ToCuboid();\n\tkbg\t= Cuboid.Width(gb3);\n\tcs2 = DSCore.List.SortByKey(cs1,gb2)[\"sorted list\"];\n\tcub\t= DSCore.List.Sort(gb3.Transform(CoordinateSystem.Identity(),cs2).Centroid());\n\t//Walls\n\ta=\tRevit.ElementQueries.OfCategory(Category.ByName(\"Walls\"));\n\tb=\tWall.GetLocation(a);\n\n\t//Filter-Distance\n\tdc=\t\tAutodesk.Geometry.DistanceTo(b@L2<1L>,cub@L1<1L>)>kbg+25? false:true;\n\tdc1=\tDSCore.List.FilterByBoolMask(b@L2<1L>,dc@L2<1L>)[\"in\"];\n\tdc2=\tDesignScript.Curve.Extrude(dc1,Vector.ZAxis(),300);\n\t//Filter-Surface\n\tsp1=\tDSCore.List.IsEmpty(dc1@L2<1>);\n\tsp2=\tDSCore.List.FilterByBoolMask(gmty[0],sp1)[\"in\"];\n\tsp3=\tDSCore.List.FilterByBoolMask(gmty[1],sp1)[\"out\"];\n\tsp0=\tsp3.PointAtParameter(0.5,0.5);\n\tsp_=\tSurface.Area(sp2);\n\treturn [sp2,sp3,dc2,sp0,sp_];\n\n\n};",
+      "Id": "ff4e5a397af8481ea90a107ce1d335ca",
+      "Inputs": [],
+      "Outputs": [],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "Yanındaduvarolmayanmerdiven[0];\nAlan[4];",
+      "Id": "b411969578d04229a4b7e7c65ab2b8d5",
+      "Inputs": [
+        {
+          "Id": "08fc8e1e73ff4bbbb94ef604c3bedfdc",
+          "Name": "Yanındaduvarolmayanme...",
+          "Description": "Yanındaduvarolmayanmerdiven",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a2fba3f2585c4bee9164b12be4d678f8",
+          "Name": "Alan",
+          "Description": "Alan",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f04b20a2b0f6488c8b67f1c5150a3216",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "65141852da7e44898ec6e065782eada8",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "4855b539-d193-401c-8ca2-71555bb332cd",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "41473c864872451c91e52d669542e3bd",
+      "Inputs": [
+        {
+          "Id": "294dda8f1d1545ab8e3b90b0304ec420",
+          "Name": "geometry",
+          "Description": "var[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": true,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9cc606f070734f7c86adc7dadcfadae9",
+          "Name": "other",
+          "Description": "var[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": true,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "79c80b65b3c94d3dbbefc08478d1dfa0",
+          "Name": "isClosest",
+          "Description": "bool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c16a92e0bb6d40e2b2f631602fc727c7",
+          "Name": "index",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a172a28ab66e497d95c708c7789f74b3",
+          "Name": "distance",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Provides the index of the closest or farthest geometry. Should prove faster than getting the geometry and finding its index in two separate operations."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "gen(s);",
+      "Id": "d96896078d6b40558d57830865dd1f86",
+      "Inputs": [
+        {
+          "Id": "b00b94b8b9f3418c9503e8b3cdd187e1",
+          "Name": "s",
+          "Description": "s",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f2c4216df6564c2bb7b26cd4c9cfc7f6",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "duv[2];",
+      "Id": "a0943bea17a1446bba86452ba0b5232b",
+      "Inputs": [
+        {
+          "Id": "4af1dace886b40dfa763508720384e1a",
+          "Name": "duv",
+          "Description": "duv",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c1f96e2b99d744b984dccf3e367426de",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "pon[3];",
+      "Id": "b8bb3c45be684c8fbb0af558723b7947",
+      "Inputs": [
+        {
+          "Id": "eeb76eb105c14e1aace840ab26205f0d",
+          "Name": "pon",
+          "Description": "pon",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "91899c22ed204386832421f2e56e03fe",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "def top (s:var[]..[],v:var[]..[])\n{\n\ta=\tv>13? true:false;\n\tb=\tDSCore.List.FilterByBoolMask(gen(s)[1],a)[\"in\"];\n\tc=\tb.ByUnion();\n\td=\tSurface.Area(c);\n\n\treturn [c,d];\n};",
+      "Id": "acb3f0038f1749c58e94d45f14f3f438",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "eb37cd0f40124be6b389190fb9ac67b7",
+          "Name": "",
+          "Description": "a",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d30e35837c10499ead14bdbac11fe373",
+          "Name": "",
+          "Description": "b",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5c8ff7c17a52422eb64f2a502242a235",
+          "Name": "",
+          "Description": "c",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "86fded33568f4230bc57a200d2cc33e9",
+          "Name": "",
+          "Description": "d",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "top(s,v);",
+      "Id": "34d2201d9fe444a5929332dd370a2916",
+      "Inputs": [
+        {
+          "Id": "93dd809955494e7bbc96905b80584c3f",
+          "Name": "s",
+          "Description": "s",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a40b1d6ad48a44d286456db5f9c53a23",
+          "Name": "v",
+          "Description": "v",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c19aed70ec534e44a3300491a6436bb6",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "Yanındaduvarolanmerdiven[0];\nAlan[1];",
+      "Id": "a6ac7c21db1c4e048a0a8fc2d62fbfe9",
+      "Inputs": [
+        {
+          "Id": "c44fb96f9fa6485a8ba4f2e7430f9c49",
+          "Name": "Yanındaduvarolanmerdiven",
+          "Description": "Yanındaduvarolanmerdiven",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "769fd76b84ff4838a2a1f75266921aaa",
+          "Name": "Alan",
+          "Description": "Alan",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "41668ecd420e4bc082245d929fdc132f",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "23e84795da12482e961c9e72f84d33a0",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "02ba4479a054437cbf95ca96d582c98d",
+      "End": "c3ed2e624a4149deba5708945337d70b",
+      "Id": "d534061df80045e5a1f0c97fc6efdd90"
+    },
+    {
+      "Start": "b56e2d3c848b4d31a06a2e93252cc554",
+      "End": "143eac57650c46b9a65bf81126a0ea67",
+      "Id": "6007244c8ed3478f9de60921b89317d5"
+    },
+    {
+      "Start": "8e7d7262c81941519a866984046976df",
+      "End": "b00b94b8b9f3418c9503e8b3cdd187e1",
+      "Id": "af572ea12dd848988fed887ff7cf83ff"
+    },
+    {
+      "Start": "8e7d7262c81941519a866984046976df",
+      "End": "93dd809955494e7bbc96905b80584c3f",
+      "Id": "a33fa3f5274d495c89f3beb4c530ad3f"
+    },
+    {
+      "Start": "a172a28ab66e497d95c708c7789f74b3",
+      "End": "a40b1d6ad48a44d286456db5f9c53a23",
+      "Id": "596b75a41f124dc0ace57a53f00c6a3a"
+    },
+    {
+      "Start": "f2c4216df6564c2bb7b26cd4c9cfc7f6",
+      "End": "4af1dace886b40dfa763508720384e1a",
+      "Id": "ec640c621d8442bab0bfda6a615b5400"
+    },
+    {
+      "Start": "f2c4216df6564c2bb7b26cd4c9cfc7f6",
+      "End": "eeb76eb105c14e1aace840ab26205f0d",
+      "Id": "6947c2a629214bcbb2dfb7d7232f0f4e"
+    },
+    {
+      "Start": "f2c4216df6564c2bb7b26cd4c9cfc7f6",
+      "End": "08fc8e1e73ff4bbbb94ef604c3bedfdc",
+      "Id": "9aed755c37bb4c4395d5f1319a70d0da"
+    },
+    {
+      "Start": "f2c4216df6564c2bb7b26cd4c9cfc7f6",
+      "End": "a2fba3f2585c4bee9164b12be4d678f8",
+      "Id": "58809d01774a469db1222704a55a9366"
+    },
+    {
+      "Start": "c1f96e2b99d744b984dccf3e367426de",
+      "End": "9cc606f070734f7c86adc7dadcfadae9",
+      "Id": "e7767b17c17544c8a1ab65f606d19680"
+    },
+    {
+      "Start": "91899c22ed204386832421f2e56e03fe",
+      "End": "294dda8f1d1545ab8e3b90b0304ec420",
+      "Id": "7429922f645e4ac19849457073fa44ee"
+    },
+    {
+      "Start": "c19aed70ec534e44a3300491a6436bb6",
+      "End": "c44fb96f9fa6485a8ba4f2e7430f9c49",
+      "Id": "ded18cb75f8b4349ba7030b97e64c9e3"
+    },
+    {
+      "Start": "c19aed70ec534e44a3300491a6436bb6",
+      "End": "769fd76b84ff4838a2a1f75266921aaa",
+      "Id": "2c5250b502a249599681a5b5549b0b40"
+    }
+  ],
+  "Dependencies": [
+    "4d81b7b4-8bc1-4ff8-8fe5-da74bc37fef0",
+    "4855b539-d193-401c-8ca2-71555bb332cd"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Clockwork for Dynamo 2.x",
+      "Version": "2.3.0",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "b4b0d43753ec47a29f8e9643f5156a61"
+      ]
+    },
+    {
+      "Name": "spring nodes",
+      "Version": "204.1.0",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "41473c864872451c91e52d669542e3bd"
+      ]
+    }
+  ],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.6.1.8786",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": 1847.3486573995708,
+      "EyeY": 13979.432032279075,
+      "EyeZ": 1361.414812711583,
+      "LookX": 1497.6286476184735,
+      "LookY": -1851.5574757248542,
+      "LookZ": -1733.0478653040147,
+      "UpX": 0.29247403647239512,
+      "UpY": 0.89437740766658369,
+      "UpZ": -0.33844939155734605
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": false,
+        "Name": "Code Block",
+        "Id": "bb8a404920d047fba49f0b9847d1cfa8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 755.825974254802,
+        "Y": 297.13766027821487
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "b99bb78cfa734cf9863709a02538ebb8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 587.010588096951,
+        "Y": 287.7705815236726
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Solid.ByUnion+",
+        "Id": "b4b0d43753ec47a29f8e9643f5156a61",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1348.571428571428,
+        "Y": 305.04502648275724
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Code Block",
+        "Id": "773ddac72376466fa5174859f326ad65",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 740.59529250581738,
+        "Y": -229.42213413870758
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Code Block",
+        "Id": "ff4e5a397af8481ea90a107ce1d335ca",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1388.0407359592771,
+        "Y": -431.66323231469687
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "b411969578d04229a4b7e7c65ab2b8d5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2481.980633868422,
+        "Y": 207.02054333131707
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "ꟿ Geometry.IndexByDistance",
+        "Id": "41473c864872451c91e52d669542e3bd",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2019.5423774151509,
+        "Y": 300.53581202988511
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Code Block",
+        "Id": "d96896078d6b40558d57830865dd1f86",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1625.1062950392929,
+        "Y": 312.39811211534527
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Code Block",
+        "Id": "a0943bea17a1446bba86452ba0b5232b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1823.7560506139096,
+        "Y": 259.66268498268482
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Code Block",
+        "Id": "b8bb3c45be684c8fbb0af558723b7947",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1827.977005632906,
+        "Y": 365.99978006557353
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Code Block",
+        "Id": "acb3f0038f1749c58e94d45f14f3f438",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2101.4531337859253,
+        "Y": -312.1054451347232
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Code Block",
+        "Id": "34d2201d9fe444a5929332dd370a2916",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2287.7350795611874,
+        "Y": 314.32850411257596
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "a6ac7c21db1c4e048a0a8fc2d62fbfe9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2480.9265734491664,
+        "Y": 308.71211752934767
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "d28fe7f177aa44e9add8d0683a1d77d5",
+        "Title": "KalıpAlan İşlemleri",
+        "Nodes": [
+          "773ddac72376466fa5174859f326ad65"
+        ],
+        "Left": 730.59529250581738,
+        "Top": -282.850705567279,
+        "Width": 597.14285714285711,
+        "Height": 489.0,
+        "FontSize": 36.0,
+        "InitialTop": -229.42213413870758,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 43.428571428571431,
+        "Background": "#FFFFAA45"
+      },
+      {
+        "Id": "05cba49442ff46bd8a3fe62c4de09357",
+        "Title": "Merdivenin Konumuna Göre Kalıp Hesabı",
+        "Nodes": [
+          "ff4e5a397af8481ea90a107ce1d335ca"
+        ],
+        "Left": 1378.0407359592771,
+        "Top": -485.09180374326831,
+        "Width": 698.85714285714289,
+        "Height": 699.85714285714289,
+        "FontSize": 36.0,
+        "InitialTop": -431.66323231469687,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 43.428571428571431,
+        "Background": "#FFFFAA45"
+      },
+      {
+        "Id": "a474fd401f134273a3493611d184b4b1",
+        "Title": "Filtreli Kalıp Alan",
+        "Nodes": [
+          "acb3f0038f1749c58e94d45f14f3f438"
+        ],
+        "Left": 2091.4531337859253,
+        "Top": -365.53401656329464,
+        "Width": 533.14285714285711,
+        "Height": 278.71428571428572,
+        "FontSize": 36.0,
+        "InitialTop": -312.1054451347232,
+        "InitialHeight": 255.28571428571428,
+        "TextblockHeight": 43.428571428571431,
+        "Background": "#FFFFAA45"
+      },
+      {
+        "Id": "29567179b1c64bcab6396fa136280781",
+        "Title": "ClockWork İndir",
+        "Nodes": [],
+        "Left": 1388.8288606434373,
+        "Top": 257.49639603098734,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "ae3c81548cbf430b8e64a0d12ed0faa0",
+        "Title": "Springs İndir",
+        "Nodes": [],
+        "Left": 2069.6437562527722,
+        "Top": 241.04825904235742,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": -595.82211613391951,
+    "Y": 460.32894555676427,
+    "Zoom": 0.7928881552865672
+  }
+}
