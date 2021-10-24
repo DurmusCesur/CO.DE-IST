@@ -1,0 +1,966 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "GoogleTranslateDS",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "DSCore.List": {
+        "Key": "DSCore.List",
+        "Value": "DSCoreNodes.dll"
+      },
+      "List": {
+        "Key": "List",
+        "Value": "BuiltIn.ds"
+      },
+      "Revit.Elements.Element": {
+        "Key": "Revit.Elements.Element",
+        "Value": "RevitNodes.dll"
+      },
+      "DesignScript.Dictionary.ByKeysValues": {
+        "Key": "DesignScript.Builtin.Dictionary",
+        "Value": "DesignScriptBuiltin.dll"
+      },
+      "DesignScript.Dictionary": {
+        "Key": "DesignScript.Builtin.Dictionary",
+        "Value": "DesignScriptBuiltin.dll"
+      },
+      "DesignScript.Builtin.Dictionary.ByKeysValues": {
+        "Key": "DesignScript.Builtin.Dictionary",
+        "Value": "DesignScriptBuiltin.dll"
+      },
+      "WebRequest": {
+        "Key": "DynaWeb.WebRequest",
+        "Value": "DynaWeb.dll"
+      },
+      "WebResponse": {
+        "Key": "DynaWeb.WebResponse",
+        "Value": "DynaWeb.dll"
+      },
+      "DSCore.String": {
+        "Key": "DSCore.String",
+        "Value": "DSCoreNodes.dll"
+      },
+      "DesignScript.Builtin.Dictionary": {
+        "Key": "DesignScript.Builtin.Dictionary",
+        "Value": "DesignScriptBuiltin.dll"
+      },
+      "String": {
+        "Key": "DSCore.String",
+        "Value": "DSCoreNodes.dll"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"https://translate.googleapis.com/translate_a/single?client=gtx&sl=\" + sourceLang + \"&tl=\" + targetLang + \"&dt=t&q=\" + sourceText;",
+      "Id": "3f61b0cd50ee436081bc115fc43d87d6",
+      "Inputs": [
+        {
+          "Id": "38f0242be217433fa9e5d80cd96a9532",
+          "Name": "sourceLang",
+          "Description": "sourceLang",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ab84cad55aaf4338adb0fa6944f1ab9e",
+          "Name": "targetLang",
+          "Description": "targetLang",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "123d8830929e40fd8acc97f4b66b3cfc",
+          "Name": "sourceText",
+          "Description": "sourceText",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a510120446014c78b260f80e6e31cfc0",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "// Language Codes: Auto\nauto = \"auto\";\n// Language Codes: A-H\nAfrikaans = \"af\";\nAlbanian = \"sq\";\nArabic = \"ar\";\nAzerbaijani\t= \"az\";\nBasque = \"eu\";\nBengali\t= \"bn\";\nBelarusian = \"be\";\nBulgarian = \"bg\";\nCatalan = \"ca\";\nChineseSimplified = \"zh-CN\";\nChineseTraditional = \"zh-TW\";\nCroatian = \"hr\";\nCzech = \"cs\";\nDanish = \"da\";\nDutch = \"nl\";\nEnglish = \"en\";\nEsperanto = \"eo\";\nEstonian = \"et\";\nFilipino = \"tl\";\nFinnish = \"fi\";\nFrench = \"fr\";\nGalician = \"gl\";\nGeorgian = \"ka\";\nGerman = \"de\";\nGreek = \"el\";\nGujarati = \"gu\";\nHaitianCreole = \"ht\";\nHebrew = \"iw\";\nHindi = \"hi\";\nHungarian = \"hu\";",
+      "Id": "7fb5e5ae21334165959e9d7bdb221212",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2aaeac55c01043c0a7497153d7f98a20",
+          "Name": "",
+          "Description": "auto",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6351d25e57b74ec3a54119f794b1fe01",
+          "Name": "",
+          "Description": "Afrikaans",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1e4fad81ba8a489a9c55111ac53112e7",
+          "Name": "",
+          "Description": "Albanian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "35fcd97db23d4cc7b3144483d9e2ec24",
+          "Name": "",
+          "Description": "Arabic",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0580243b55c24355b99a1a21d780d433",
+          "Name": "",
+          "Description": "Azerbaijani",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4f2d7065567b453395988bcae25e66b1",
+          "Name": "",
+          "Description": "Basque",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c456ed697fe74753a1c28aee7b5872d2",
+          "Name": "",
+          "Description": "Bengali",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e315069e7f0f4d8db907cc047c473ad3",
+          "Name": "",
+          "Description": "Belarusian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "345b4fc696f34cd99e5db6e83ebb42d5",
+          "Name": "",
+          "Description": "Bulgarian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f32f4afb9c894fcf9963bb99fbb65f8e",
+          "Name": "",
+          "Description": "Catalan",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1cf5d51d456b4e7bb1b0da12581f2390",
+          "Name": "",
+          "Description": "ChineseSimplified",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4010769d6dc54eee8a76d4f33309b75b",
+          "Name": "",
+          "Description": "ChineseTraditional",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e5a465e4f4cb41d892898c2b3e8f99fa",
+          "Name": "",
+          "Description": "Croatian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7b68e402729c40acbe17afbf40c21169",
+          "Name": "",
+          "Description": "Czech",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8704653e80af466d8fef148c57281c1d",
+          "Name": "",
+          "Description": "Danish",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "653a3ea70e514ae3953a36243f060254",
+          "Name": "",
+          "Description": "Dutch",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4f12db6c3ab3422a960f712715f49d0d",
+          "Name": "",
+          "Description": "English",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2c50f29624b2492083c64cf759012efb",
+          "Name": "",
+          "Description": "Esperanto",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7067d2e5fec84fe7817fb62a95334431",
+          "Name": "",
+          "Description": "Estonian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5caf64ab940f489183820152debd8738",
+          "Name": "",
+          "Description": "Filipino",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c5e575ae08644b658224a635a7b725d0",
+          "Name": "",
+          "Description": "Finnish",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e6b4b58876154daa863b28f6cc66a1b4",
+          "Name": "",
+          "Description": "French",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "352d27bb6e2f44abb6089e269f819065",
+          "Name": "",
+          "Description": "Galician",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "26050ebd094c4721ac6d21096c2d6194",
+          "Name": "",
+          "Description": "Georgian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "175aa093f53f43db95cc21e5539c772a",
+          "Name": "",
+          "Description": "German",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "552232dd7c214c5fbc9fab363fb1a812",
+          "Name": "",
+          "Description": "Greek",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3b124c1a9c6c4f85b4ec63c3f56bb315",
+          "Name": "",
+          "Description": "Gujarati",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "27716d98325e4075a36cc6b03db3ece5",
+          "Name": "",
+          "Description": "HaitianCreole",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b44bc6483aa54ce788c1845d1aabc8e1",
+          "Name": "",
+          "Description": "Hebrew",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2e03486dff704241b0ff3ceaf372e665",
+          "Name": "",
+          "Description": "Hindi",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "11a9edbc413e43c183ea8f4ee6852932",
+          "Name": "",
+          "Description": "Hungarian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "// Language Codes: I-Z\nIcelandic = \"is\";\nIndonesian = \"id\";\nIrish = \"ga\";\nItalian = \"it\";\nJapanese = \"ja\";\nKannada = \"kn\";\nKorean = \"ko\";\nLatin = \"la\";\nLatvian = \"lv\";\nLithuanian = \"lt\";\nMacedonian = \"mk\";\nMalay = \"ms\";\nMaltese\t= \"mt\";\nNorwegian = \"no\";\nPersian = \"fa\";\nPolish = \"pl\";\nPortuguese = \"pt\";\nRomanian = \"ro\";\nRussian = \"ru\";\nSerbian = \"sr\";\nSlovak = \"sk\";\nSlovenian = \"sl\";\nSpanish = \"es\";\nSwahili = \"sw\";\nSwedish = \"sv\";\nTamil = \"ta\";\nTelugu = \"te\";\nThai = \"th\";\nTurkish = \"tr\";\nUkrainian = \"uk\";\nUrdu = \"ur\";\nVietnamese = \"vi\";\nWelsh = \"cy\";\nYiddish\t= \"yi\";",
+      "Id": "67c1646810594ceb8052774359c56597",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "5960c8e09f57414e9eaa769f87c2e730",
+          "Name": "",
+          "Description": "Icelandic",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ec6eb75f6a1a443fa7395ef6aec80383",
+          "Name": "",
+          "Description": "Indonesian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "48018415d0c843b5a66b72c841ccfbe3",
+          "Name": "",
+          "Description": "Irish",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "91bd68378c424fbc8f23c741cd1ae23f",
+          "Name": "",
+          "Description": "Italian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c992ba2043804e31aa2cdc0d3684c9e7",
+          "Name": "",
+          "Description": "Japanese",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "393bd803c11641a6a9536d87c88c1c9f",
+          "Name": "",
+          "Description": "Kannada",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2cff37d48ef34deab744cfb85513530b",
+          "Name": "",
+          "Description": "Korean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0710615ffe00405fa0366cbfc0bbee6e",
+          "Name": "",
+          "Description": "Latin",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d749797289be45f9889c9af5d566d7e1",
+          "Name": "",
+          "Description": "Latvian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8ad075bd52fd4685a7b4b5cd3665e63a",
+          "Name": "",
+          "Description": "Lithuanian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "706c1c4299de4ba28d67d2fe3c44704b",
+          "Name": "",
+          "Description": "Macedonian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "859fb2fab9d947328ac4b61fc147ed46",
+          "Name": "",
+          "Description": "Malay",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6f32559eff194e0885560ecaca7a8171",
+          "Name": "",
+          "Description": "Maltese",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e3b5c1d934f94c2d8aaace81f63e5b88",
+          "Name": "",
+          "Description": "Norwegian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "94ff6aa461954307a43e666325353342",
+          "Name": "",
+          "Description": "Persian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b102addcb99c48e6a5188a9f39da2ff6",
+          "Name": "",
+          "Description": "Polish",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4c6e3e4125ce404e8f9b6e9cee3c4dab",
+          "Name": "",
+          "Description": "Portuguese",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8c22719b6e1044ce92c6eb553a29695b",
+          "Name": "",
+          "Description": "Romanian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f187e9cc23d7478aa4f8efac7128e7a0",
+          "Name": "",
+          "Description": "Russian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "55ab2b629ab14a1686aefb4fb8f97fa9",
+          "Name": "",
+          "Description": "Serbian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b32e7a260a0442079fe681cb76b1e21d",
+          "Name": "",
+          "Description": "Slovak",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "93c5e2eda43e4f81af75bcafec28e0e3",
+          "Name": "",
+          "Description": "Slovenian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "cbaf8eab8920447a8a0dd06eb6172bbd",
+          "Name": "",
+          "Description": "Spanish",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "451ca0d9e92c46858345ed0989fc482d",
+          "Name": "",
+          "Description": "Swahili",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c3051b2551f540c3a00e6c185ebf7a4d",
+          "Name": "",
+          "Description": "Swedish",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f1a8914fe37046179f8dbf064118ee1c",
+          "Name": "",
+          "Description": "Tamil",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "94942f2531c94c74a77edff7e2133fdf",
+          "Name": "",
+          "Description": "Telugu",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "78eeb2880d08405a8cf663ee587cbcd9",
+          "Name": "",
+          "Description": "Thai",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3bc6c2fe713e4b588b92b6d48c824d0d",
+          "Name": "",
+          "Description": "Turkish",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ff87170e9898457588be175403b689f4",
+          "Name": "",
+          "Description": "Ukrainian",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ea70efdb52ae4a6098230f74d3d5d89f",
+          "Name": "",
+          "Description": "Urdu",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7d2014037eec40648e88a68e31b362e7",
+          "Name": "",
+          "Description": "Vietnamese",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f1a4aef85c174778a0fbd14a884bae46",
+          "Name": "",
+          "Description": "Welsh",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9d18285a787a49649db9af66221c97e7",
+          "Name": "",
+          "Description": "Yiddish",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "//Prends Reponse Google.Translate\na=\tWebRequest.ByUrl(r);\na1=\tWebRequest.Execute(a);\na2=\tWebResponse.Content(a1);\n//Filter String\ns=\tDSCore.String.Split(a2,[\"[\",\"]\"]);\ns1=\tDSCore.String.Split(DSCore.List.FirstItem(DSCore.List.FilterByBoolMask(s,DSCore.String.Length(s)>2)[\"in\"]@L2<1>),\"\\\"\");\n\n//Origin Text\not=\tDSCore.List.GetItemAtIndex(s1@L2<1>,2);\n//Target Text\ntt=\tDSCore.List.GetItemAtIndex(s1@L2<1>,0);\n\n//Cree Dictionnaire\nd=\tDesignScript.Dictionary.ByKeysValues(ot,tt);\nd1=\tDesignScript.Dictionary.Values(d);\nd2=\tDesignScript.Dictionary.Keys(d);",
+      "Id": "e10873febb7e40adb6d7c45571171e48",
+      "Inputs": [
+        {
+          "Id": "6a474649c85843b5946cbc60de97d2fa",
+          "Name": "r",
+          "Description": "r",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d09d87635b954221b6498def8b551d85",
+          "Name": "",
+          "Description": "a",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "362f9042f6f34bbc87b3b9d829124d36",
+          "Name": "",
+          "Description": "a1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "41ff61952ba24157892f319370c9337e",
+          "Name": "",
+          "Description": "a2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "bc145fba52e6448d86e4deb82ceb7241",
+          "Name": "",
+          "Description": "s",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "81c9cedac494430bb19a0f3320b53405",
+          "Name": "",
+          "Description": "s1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a32456e73b39488c9d754e6aea710687",
+          "Name": "",
+          "Description": "ot",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2cbd50b4a4b04734a7f1a7d2b728a25d",
+          "Name": "",
+          "Description": "tt",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fae9a791aaba4d50a46e110518ad89e2",
+          "Name": "",
+          "Description": "d",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "75af7a12f90646e18c044e7d81f8d3f3",
+          "Name": "",
+          "Description": "d1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d828eba379734f1fb3325f7e9003b489",
+          "Name": "",
+          "Description": "d2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "text = \" \";",
+      "Id": "c96075a0ba304136b312af4b8d94300a",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b1ad64c7e4314542b08113644a70f9f4",
+          "Name": "",
+          "Description": "text",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "a510120446014c78b260f80e6e31cfc0",
+      "End": "6a474649c85843b5946cbc60de97d2fa",
+      "Id": "aa30e6b3f39b4b3c90c2c1ce277b8548"
+    },
+    {
+      "Start": "4f12db6c3ab3422a960f712715f49d0d",
+      "End": "ab84cad55aaf4338adb0fa6944f1ab9e",
+      "Id": "29ccdb8e12a542fd951424b3329a2d23"
+    },
+    {
+      "Start": "3bc6c2fe713e4b588b92b6d48c824d0d",
+      "End": "38f0242be217433fa9e5d80cd96a9532",
+      "Id": "b2cd2d1e661747aab667a876f6d3e19b"
+    },
+    {
+      "Start": "b1ad64c7e4314542b08113644a70f9f4",
+      "End": "123d8830929e40fd8acc97f4b66b3cfc",
+      "Id": "032aabb7d1c24566b18fe9d787101b0e"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "ExtensionWorkspaceData": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.11.1.4675",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "3f61b0cd50ee436081bc115fc43d87d6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -587.89331914204206,
+        "Y": 699.56491735390648
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "7fb5e5ae21334165959e9d7bdb221212",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1138.4606133033185,
+        "Y": 233.47534852694753
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "67c1646810594ceb8052774359c56597",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1136.8343549384417,
+        "Y": 883.79000140938206
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "e10873febb7e40adb6d7c45571171e48",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 247.60037821542892,
+        "Y": 693.38700350745262
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "c96075a0ba304136b312af4b8d94300a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -715.0,
+        "Y": 941.0
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "a4171341663d457abd665fbc3d5b3c72",
+        "Title": "Full ISO Language paring codes",
+        "Nodes": [
+          "7fb5e5ae21334165959e9d7bdb221212",
+          "67c1646810594ceb8052774359c56597"
+        ],
+        "Left": -1148.4606133033185,
+        "Top": 137.18963424123325,
+        "Width": 311.42857142857144,
+        "Height": 1428.4575100252916,
+        "FontSize": 36.0,
+        "InitialTop": 233.47534852694753,
+        "InitialHeight": 795.31465288243453,
+        "TextblockHeight": 86.285714285714292,
+        "Background": "#FFB9F9E1"
+      }
+    ],
+    "X": 954.85776677199817,
+    "Y": -39.847010475359639,
+    "Zoom": 0.67104496473443642
+  }
+}
